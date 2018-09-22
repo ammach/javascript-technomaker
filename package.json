@@ -1,0 +1,26 @@
+{
+  "name": "nodeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/app -d dist",
+    "prestart": "eslint src/app",
+    "start": "node ./src/app/index.js",
+    "pretest": "eslint src/app",
+    "test": "nyc mocha src/app/**/**.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "nock": "^9.6.1",
+    "nodemon": "^1.18.4",
+    "sinon": "^6.2.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  }
+}
